@@ -141,8 +141,6 @@ def test_init():
     print('Expected for p2: 100 -40')
     print('Actual for p2:  ', p2.x, p2.y)
 
-# TODO
-
 
 class Point(object):
     """ Creates a 2D point on a x,y plane """
@@ -212,15 +210,15 @@ class Point(object):
         dx = abs(p1.x - self.x) * .5
         dy = abs(p1.y - self.y) * .5
         if p1.x > self.x:
-            halfX = self.x + dx
+            halfx = self.x + dx
         else:
-            halfX = p1.x + dx
+            halfx = p1.x + dx
         if p1.y > self.y:
-            halfY = self.y + dy
+            half_y = self.y + dy
         else:
-            halfY = p1.y + dy
+            half_y = p1.y + dy
 
-        half = Point(halfX, halfY)
+        half = Point(halfx, half_y)
         return half
 
 
@@ -1098,7 +1096,7 @@ def test_halfway_to():
 
     """
     # ------------------------------------------------------------------
-    # TODO: 13.  Follow the same instructions as in TODO 3 above,
+    # TO DO: 13.  Follow the same instructions as in TO DO 3 above,
     #    but for the  HALFWAY_TO  method specified above.
     # ------------------------------------------------------------------
     print()
@@ -1135,4 +1133,6 @@ def test_halfway_to():
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
